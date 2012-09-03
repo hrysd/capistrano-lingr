@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["hrysd22@gmail.com"]
   gem.description   = %q{notify to Lingr after deploy by Capistrano}
   gem.summary       = %q{Capistrano Lingr}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/hrysd/capistrano-lingr"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
