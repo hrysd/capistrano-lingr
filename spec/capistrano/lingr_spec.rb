@@ -25,7 +25,6 @@ describe Capistrano::Lingr do
     end
     
     it 'succeed to post' do
-      #url = %r|.*lingr.com/api/room/say\?room=.*&bot=.*&text=.*&bot_verifier=.*|
       url = {
         :room => 'room_id',
         :bot  => 'bot_id',
@@ -44,5 +43,5 @@ describe Capistrano::Lingr do
   it { subject.send(:verifier).should == 'e6681220943d0d1303b905dba26a7eecff2aeb58' }
   it { subject.send(:git_user).should == 'Hiroshi Yoshida'}
   it { subject.send(:text).should == 'test is deployed by Hiroshi Yoshida' }
-  #http://lingr.com/api/room/say?room=room_id&bot=bot_id&text=test%20is%20deployed%20by%20Hiroshi%20Yoshida&bot_verifier=e6681220943d0d1303b905dba26a7eecff2aeb58
+
 end
