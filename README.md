@@ -6,28 +6,28 @@ Notify to Lingr after deploy by Capistrano
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano-lingr'
+```rb
+gem 'capistrano-lingr'
+```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install capistrano-lingr
+And then execute: `bundle install`
 
 ## Usage
 
-	require 'capistrano/lingr'
-		
-  set :lingr_config, {
-    :room_id => "hoge",
-    :bot_id  => "huga",
-    :secret  => "piyo"
-  }
+In `config/deploy.rb`
 
-	after :deploy, 'notify:lingr'
+```rb
+require 'capistrano/lingr'
 		
+set :lingr_config, {
+  :room_id => "hoge",
+  :bot_id  => "huga",
+  :secret  => "piyo"
+}
+
+after :deploy, 'notify:lingr'
+```
+
 ## Contributing
 
 1. Fork it
