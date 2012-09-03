@@ -1,6 +1,6 @@
 # Capistrano::Lingr
 
-TODO: Write a gem description
+Notify to Lingr after deploy by Capistrano
 
 ## Installation
 
@@ -18,15 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-		require 'capistrano/lingr'
+	require 'capistrano/lingr'
 		
-    set :lingr_config, {
-      :room_id => "hoge",
-      :bot_id => "huga",
-      :secret => "fizz"
-      }
+  set :lingr_config, {
+    :room_id => "hoge",
+    :bot_id  => "huga",
+    :secret  => "piyo"
+  }
 
-		after :deploy, 'notify:lingr'
+	after :deploy, 'notify:lingr'
 		
 ## Contributing
 
