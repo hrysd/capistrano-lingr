@@ -47,7 +47,11 @@ class Capistrano::Lingr
   end
   
   def text
-    "#{application} is deployed by #{git_user}"
+    if @cap.lingr_config[:text] 
+      @cap.lingr_config[:text]
+    else
+      "#{application} is deployed by #{git_user}"
+    end
   end
 
   def git_user
