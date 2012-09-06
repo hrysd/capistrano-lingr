@@ -1,4 +1,4 @@
-# Capistrano::Lingr [![Build Status](https://secure.travis-ci.org/rochefort/gem-search.png)](http://travis-ci.org/rochefort/gem-search)
+# Capistrano::Lingr [![Build Status](https://secure.travis-ci.org/hrysd/capistrano-lingr.png)](http://travis-ci.org/hrysd/capistrano-lingr)
 
 Notify to Lingr after deploy by Capistrano
 
