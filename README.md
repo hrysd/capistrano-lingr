@@ -26,7 +26,7 @@ set :lingr_config, {
   room_id: "hoge",
   bot_id:  "huga",
   secret:  "piyo",
-  text: "DEPROY DONE!!!" # You can specify the string you want. but not required.
+  text: "DEPLOY DONE!!!" # You can specify the string you want. but not required.
 }
 
 after :deploy, 'notify:lingr'
