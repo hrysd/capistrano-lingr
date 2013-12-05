@@ -2,6 +2,10 @@
 
 Notify to Lingr after deploy by Capistrano
 
+## Requirements
+
+- `capistrano` < 3
+
 ## Installation
 
 Add this line to your application's Gemfile:
